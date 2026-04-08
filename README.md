@@ -1,105 +1,116 @@
-# Projet-Logiciel-GI22 
-## Application de gestion d'une agence de voyage
+# Projet Logiciel
+## Système de Gestion de Club Sportif
 
 ---
 
-## 📌 1. Présentation du projet
+##  1. Présentation du projet
+## 1.1 Introduction
+Ce projet consiste à développer une application permettant la gestion complète d’un **club sportif**.
 
-### 🔹 Contexte
-Dans le cadre du module **Projet Logiciel**, notre équipe développe une application Java permettant la gestion complète d’une agence de voyage.
+L’application est destinée aux :
+- Administrateurs
+- Assistants
+- Adhérents
 
-Cette application vise à faciliter la gestion des :
-- Clients
-- Prestations (séjours)
-- Réservations
-
-Elle repose sur une **interface graphique intuitive** et une **base de données relationnelle**.
+Elle permet de gérer :
+- Les adhérents
+- Les activités sportives
+- Les paiements
+- Les consultations personnelles
 
 ---
 
-### 🎯 Objectifs
+##  1.2. Objectifs
 
 | Module | Fonctionnalités |
 |--------|----------------|
-| 👤 Clients | Ajout, modification, archivage/restauration, historique |
-| 🏨 Prestations | CRUD, recherche par période, gestion des disponibilités |
-| 📅 Réservations | Association client/prestation, validation, récapitulatif |
-| 💻 Interface | Interface graphique + base de données |
+|  Adhérents | Inscription, modification, archivage, restauration |
+|  Activités | Ajouter, modifier, supprimer, afficher |
+|  Paiements | Calcul du montant, validation, suivi |
+|  Consultation | Profil adhérent, activités, état de paiement |
 
 ---
 
-## ⚙️ 2. Méthode de développement
+##  3. Conception UML
 
-### 🔹 Méthode utilisée : Agile simplifié (Scrum adapté)
+Le système a été modélisé à l’aide de plusieurs diagrammes :
 
-Nous avons choisi une approche Agile adaptée à une petite équipe.
-
-### ✔️ Avantages :
-- Flexibilité dans les priorités
-- Livraisons progressives
-- Suivi simple avec réunions hebdomadaires
-- Adapté à une équipe de 3 personnes
-
----
-
-### 🔹 Organisation
-
-- Sprints de 2 semaines  
-- Revue à la fin de chaque sprint  
-- Suivi via **GitHub Projects (Kanban)**  
-- Travail en branches + fusion vers `dev`
-
----
-
-## 👥 3. Répartition des rôles
-
-| Membre | Rôle | Module | Responsabilités |
-|--------|------|--------|----------------|
-| 👨‍💼 Membre 1 | Chef de projet | Clients | Gestion complète des clients |
-| 🛠️ Membre 2 | Backend | Prestations | CRUD + base de données |
-| 🎨 Membre 3 | Frontend | Réservations | Interface + logique de réservation |
-
----
-
-## 📅 4. Planning des sprints
-
-| Sprint | Tâches |
-|--------|--------|
-| Sprint 0 | Analyse, UML, base de données, organisation Git |
-| Sprint 1 | Structure du projet + BDD + UI |
-| Sprint 2 | Module Clients |
-| Sprint 3 | Module Prestations |
-| Sprint 4 | Module Réservations |
-| Sprint 5 | Tests, corrections, soutenance |
-
----
-
-## 🧠 5. Conception (UML)
-
-Le projet est basé sur plusieurs diagrammes :
-
+###  Diagrammes réalisés :
 - Diagramme de cas d’utilisation  
 - Diagrammes de séquence  
 - Diagrammes d’activité  
 
-### 🔹 Exemples de fonctionnalités modélisées :
-- Gestion des clients (ajout, modification, archivage)
-- Gestion des prestations
-- Gestion des réservations
-- Consultation des informations
+---
+
+###  Exemples de scénarios
+
+####  Consulter la liste des adhérents
+- **Pré-condition** : utilisateur authentifié  
+- **Post-condition** : affichage des adhérents avec leurs activités  
 
 ---
 
-## 🛠️ 6. Technologies utilisées
-
-- ☕ Java  
-- 🗄️ MySQL / SQLite  
-- 🎨 JavaFX / Swing (interface graphique)  
-- 🐙 Git & GitHub  
+####  Gestion des activités
+- Ajouter / Modifier / Supprimer une activité  
+- Vérification des contraintes (adhérents inscrits)
 
 ---
 
-## 🚀 7. Installation et exécution
+####  Gestion des adhérents
+- Inscription  
+- Modification  
+- Archivage / Restauration  
+
+---
+
+####  Gestion des paiements
+- Calcul : frais de base + activités  
+- Enregistrement du statut de paiement  
+
+---
+
+####  Consultation personnelle
+- Accès au profil  
+- Activités inscrites  
+- État des paiements  
+
+---
+
+##  4. Technologies utilisées
+
+-  Java  
+-  Base de données (MySQL / SQLite)  
+-  Interface graphique (JavaFX / Swing)  
+-  Git & GitHub  
+
+---
+
+##  5. Fonctionnement du système
+
+###  Acteurs
+- Administrateur  
+- Assistant  
+- Adhérent  
+
+###  Processus principaux
+1. Authentification  
+2. Gestion des données  
+3. Traitement des paiements  
+4. Consultation des informations  
+
+---
+## 6. Livrables
+
+| N° | Livrable | Contenu attendu | 
+|----|----------|----------------|
+| 1 | Plan de projet | Méthode, planning, répartition des rôles, structure GitHub | 
+| 2 | Analyse des besoins | Diagrammes de cas d'utilisation, spécifications fonctionnelles | 
+| 3 | Document de conception | Diagramme de classes, MCD/MLD, architecture technique | 
+| 4 | Code source | Code Java commenté, base de données, interface graphique fonctionnelle | 
+| 5 | Rapport final | Étapes réalisées, problèmes rencontrés, solutions apportées | 
+| 6 | Soutenance orale | Présentation et défense du projet (avant le 14 juin 2025) | 
+
+##  7. Installation et exécution
 
 ```bash
 git clone https://github.com/ton-user/projet.git
